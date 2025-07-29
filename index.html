@@ -1,55 +1,46 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/index.html b/index.html
-index c8c94b2ee6835104f7107828fa51e54f85b8c409..30aff86c25d3019b03cb6dac0696cf9ed4cb8a65 100644
---- a/index.html
-+++ b/index.html
-@@ -1,43 +1,46 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Boom Sportswire</title>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="style.css">
- </head>
- <body>
-   <header>
-     <h1>Boom Sportswire</h1>
-+    <button id="theme-toggle" aria-label="Toggle Theme">Light Mode</button>
-   </header>
-   <nav>
-     <a href="#">Home</a>
-     <a href="#">NBA</a>
-     <a href="#">NFL</a>
-     <a href="#">MLB</a>
-     <a href="#">UFC</a>
-     <a href="#">More</a>
-   </nav>
-   <div class="container">
-     <div class="article">
-       <img src="https://source.unsplash.com/featured/?basketball" alt="Basketball News">
-       <h2>Epic NBA Showdown Ends in OT Thriller</h2>
-       <p>The Lakers and Celtics battled it out in a dramatic overtime game last night that left fans on the edge of their seats...</p>
-     </div>
-     <div class="article">
-       <img src="https://source.unsplash.com/featured/?football" alt="Football News">
-       <h2>NFL Preseason Kicks Off with Rookie Surprises</h2>
-       <p>With the preseason underway, young talent is making headlines as rookies show promise in their debut performances...</p>
-     </div>
-     <div class="article">
-       <img src="https://source.unsplash.com/featured/?baseball" alt="Baseball News">
-       <h2>Yankees Rally in the 9th to Seal Comeback Win</h2>
-       <p>In a nail-biting finish, the Yankees delivered a walk-off home run to complete a stunning comeback victory at home...</p>
-     </div>
-   </div>
-+  <button id="scrollTop" aria-label="Scroll to top">&#8679;</button>
-   <footer>
-     <p>&copy; 2025 Boom Sportswire. All rights reserved.</p>
-   </footer>
-+  <script src="script.js"></script>
- </body>
- </html>
- 
-EOF
-)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boom Sportswire</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Boom Sportswire</h1>
+    <button id="theme-toggle" aria-label="Toggle Theme">Light Mode</button>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">NBA</a>
+    <a href="#">NFL</a>
+    <a href="#">MLB</a>
+    <a href="#">UFC</a>
+    <a href="#">More</a>
+  </nav>
+  <div class="container">
+    <div class="article">
+      <img src="https://source.unsplash.com/featured/?basketball" alt="Basketball News">
+      <h2>Epic NBA Showdown Ends in OT Thriller</h2>
+      <p>The Lakers and Celtics battled it out in a dramatic overtime game last night that left fans on the edge of their seats...</p>
+    </div>
+    <div class="article">
+      <img src="https://source.unsplash.com/featured/?football" alt="Football News">
+      <h2>NFL Preseason Kicks Off with Rookie Surprises</h2>
+      <p>With the preseason underway, young talent is making headlines as rookies show promise in their debut performances...</p>
+    </div>
+    <div class="article">
+      <img src="https://source.unsplash.com/featured/?baseball" alt="Baseball News">
+      <h2>Yankees Rally in the 9th to Seal Comeback Win</h2>
+      <p>In a nail-biting finish, the Yankees delivered a walk-off home run to complete a stunning comeback victory at home...</p>
+    </div>
+  </div>
+  <button id="scrollTop" aria-label="Scroll to top">&#8679;</button>
+  <footer>
+    <p>&copy; 2025 Boom Sportswire. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
